@@ -668,9 +668,12 @@ footer {
     }
 
     .cafe-name {
-        font-size: clamp(3.5rem, 15vw, 5rem);
-        letter-spacing: 10px;
+        font-size: clamp(2.5rem, 12vw, 4rem);
+        letter-spacing: 5px;
+        /* Reduced for mobile visibility */
         margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
     }
 
     .hero-controls {
