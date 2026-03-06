@@ -221,15 +221,21 @@ body {
 .hero-controls {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    padding: 30px;
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    gap: 20px;
+    padding: 0;
+    /* Remove padding */
+    background: none;
+    /* No background */
+    backdrop-filter: none;
+    /* No blur */
+    border: none;
+    /* No border */
+    box-shadow: none;
+    /* No shadow */
     opacity: 0;
     transform: translateY(30px);
+    width: 100%;
+    margin: 0 auto;
 }
 
 .hero-btn {
@@ -662,9 +668,8 @@ footer {
 
     .hero-controls {
         grid-template-columns: repeat(2, 1fr);
-        padding: 20px;
-        gap: 10px;
-        border-radius: 20px;
+        padding: 0;
+        gap: 15px;
     }
 
     .hero-btn {
