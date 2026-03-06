@@ -3,7 +3,7 @@
 An artisanal, high-end cafe website experience featuring immersive video backgrounds, premium glassmorphism design, and smooth GSAP animations.
 
 ## 🔗 Live Demo
-Experience the sweetness here: **[https://saranshaharwar-code.github.io/BROWLETTO-CAFE-/](https://saranshaharwar-code.github.io/BROWLETTO-CAFE-/)**
+Experience the sweetness here: **[https://saranshaharwar-code.github.io/BROWLETT-CAFE-/](https://saranshaharwar-code.github.io/BROWLETT-CAFE-/)**
 
 ---
 
