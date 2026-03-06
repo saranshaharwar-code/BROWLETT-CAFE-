@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browletto | Artisanal Cafe & Desserts</title>
+    <meta name="description"
+        content="Welcome to Browletto Cafe - Taste the finest waffles, brownies, and shakes in a premium cream-chocolate atmosphere.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader-content">BROWLETTO</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="logo">BROWLETTO</div>
+        <ul class="nav-links desktop-only">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#best-sellers">Best Sellers</a></li>
+            <li><a href="#order-online">Order Online</a></li>
+            <li><a href="#signin" class="btn-signin">Sign In</a></li>
+        </ul>
+        <div class="hamburger" id="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobile-nav" class="mobile-nav-overlay">
+        <div class="close-mobile-nav">&times;</div>
+        <ul class="mobile-nav-links">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#best-sellers">Best Sellers</a></li>
+            <li><a href="#order-online">Order Online</a></li>
+            <li><a href="#visit-store">Visit Store</a></li>
+            <li><a href="#signin" class="btn-signin">Sign In</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="video-container">
+            <video id="hero-video" autoplay muted loop playsinline>
+                <source src="INTRO.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="cafe-name">BROWLETTO</h1>
+            <div class="hero-controls">
+                <button class="hero-btn" data-video="WAFFLES.mp4">WAFFLES</button>
+                <button class="hero-btn" data-video="BROWNIE.mp4">BROWNIE</button>
+                <button class="hero-btn" data-video="THICK CHOCOLATE.mp4">THICKSHAKE</button>
+                <button class="hero-btn" data-video="MILKSHAKE.mp4">MILKSHAKE</button>
+                <button class="hero-btn" data-video="HOT CHOCOLATE.mp4">HOT CHOCOLATE</button>
+                <button class="hero-btn" data-video="ICE CREAM.mp4">ICE CREAM</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3>Desserts</h3>
+                    <ul>
+                        <li>Classic Belgian Waffle <span>₹349</span></li>
+                        <li>Choco-Fudge Brownie <span>₹229</span></li>
+                        <li>Artisanal Ice Cream <span>₹149</span></li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Shakes & Drinks</h3>
+                    <ul>
+                        <li>Dark Chocolate Thickshake <span>₹259</span></li>
+                        <li>Classic Vanilla Milkshake <span>₹199</span></li>
+                        <li>Velvety Hot Chocolate <span>₹189</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section id="best-sellers" class="section dark">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="seller-cards">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('waffle.png')"></div>
+                    <div class="card-info">
+                        <h3>Waffle Tower</h3>
+                        <p>Triple stacked with berries and chocolate drizzle.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('brownie.png')"></div>
+                    <div class="card-info">
+                        <h3>Heavenly Brownie</h3>
+                        <p>Rich, gooey, and packed with Belgian chocolate.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('thickshake.png')"></div>
+                    <div class="card-info">
+                        <h3>The Thickshake</h3>
+                        <p>Our signature chocolate blend, thick and creamy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order & Track -->
+    <section id="order-online" class="section">
+        <div class="container split">
+            <div class="order-box">
+                <h2>Order Online</h2>
+                <p>Hungry? Get your Browletto favorites delivered to your doorstep.</p>
+                <button class="primary-btn">ORDER NOW</button>
+            </div>
+            <div class="track-box">
+                <h2>Track Your Sweetness</h2>
+                <form class="track-form-premium">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Enter Order ID or Mobile Number" id="track-input">
+                        <button class="track-btn">LOCATE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Store & Maps -->
+    <section id="visit-store" class="section dark">
+        <div class="container split">
+            <div class="visit-info">
+                <h2>Visit Our Store</h2>
+                <p><strong>Address:</strong> Main Street, Beside Rajkamal Square, Amravati, Maharashtra 444601</p>
+                <p><strong>Hours:</strong> Mon-Sun: 9:00 AM - 11:00 PM</p>
+                <p><strong>Contact:</strong> +91 91234 56789</p>
+            </div>
+            <div id="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119293.9419163273!2d77.6698668!3d20.9142055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a4a6db6eb17b%3A0xfae1136585802319!2sAmravati%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1709715000000!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback -->
+    <section id="feedback" class="section">
+        <div class="container">
+            <h2 class="section-title">Sweet Words</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p>The best hot chocolate I've ever had in the city. The thickshake is a absolute game changer!</p>
+                    <div class="customer">- Sarah J.</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p>Browletto's waffles are therapeutic. The aesthetic of the place is just the cherry on top.</p>
+                    <div class="customer">- Rahul K.</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p>The dark chocolate brownie is literally heaven in a box. Highly recommend for late night
+                        cravings!</p>
+                    <div class="customer">- Ananya M.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section dark">
+        <div class="container">
+            <h2 class="section-title">Common Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q">Do you offer vegan options?</div>
+                    <div class="faq-a">Yes! We provide vegan brownies and plant-based milkshakes.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Can I book a table?</div>
+                    <div class="faq-a">Actually, we operate on a first-come, first-served basis for the ultimate cozy
+                        experience.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">BROWLETTO</div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility</a>
+            </div>
+            <div class="socials">
+                <span>IG</span> <span>FB</span> <span>TW</span>
+            </div>
+        </div>
+        <div class="copyright">© 2026 Browletto Cafe. All rights reserved.</div>
+    </footer>
+
+    <!-- Sign In Modal (Simple mockup) -->
+    <div id="signin" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Sign In</h2>
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="primary-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
