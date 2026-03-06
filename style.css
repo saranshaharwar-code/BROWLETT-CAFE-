@@ -239,20 +239,27 @@ body {
 }
 
 .hero-btn {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
+    /* Slightly darker for visibility */
+    backdrop-filter: blur(15px);
+    /* Premium glass effect per button */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* Stronger border for visibility */
     color: var(--white);
-    padding: 18px 10px;
-    font-family: var(--font-body);
-    font-size: 0.75rem;
+    padding: 20px 15px;
+    font-family: var(--font-heading);
+    /* Matching the premium brand font */
+    font-size: 1.1rem;
+    /* Much larger for visibility */
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-radius: 15px;
+    border-radius: 50px;
+    /* Sophisticated pill shape */
     text-transform: uppercase;
-    overflow: hidden;
-    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Drop shadow to pop from background */
 }
 
 .hero-btn:hover,
@@ -673,8 +680,9 @@ footer {
     }
 
     .hero-btn {
-        padding: 12px 5px;
-        font-size: 0.65rem;
+        padding: 15px 10px;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
     }
 
     .menu-grid,
